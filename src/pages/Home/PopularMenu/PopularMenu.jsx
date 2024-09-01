@@ -14,9 +14,9 @@ export default function PopularMenu() {
       .catch((error) => console.log(error));
   }, []);
   return (
-    <section>
+    <section className="mb-12">
       <SectionTitle heading={"From Our Menu"} subHeading={"Check it Out"} />
-      <div>
+      <div className="grid md:grid-cols-2 gap-4">
         {menu.map((item) => (
           <MenuItem item={item} key={item._id} />
         ))}
