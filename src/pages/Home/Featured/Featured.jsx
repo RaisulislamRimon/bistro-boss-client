@@ -1,3 +1,4 @@
+import "./Featured.css";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import featuredImg from "../../../assets/home/featured.jpg";
 
@@ -15,9 +16,9 @@ export const Featured = () => {
   // Display the formatted date
   // console.log(formattedDate); // Output: Today's date (e.g., "September 15, 2024")
   return (
-    <div className="featured-item">
+    <div className="featured-item text-white pt-8 my-20">
       <SectionTitle heading="featured item" subHeading="check it out" />
-      <div className="md:flex justify-center items-center py-8 px-16">
+      <div className="md:flex justify-center items-center pb-20 pt-12 px-36">
         <div>
           <img src={featuredImg} alt="featuredImg" className="" />
         </div>
