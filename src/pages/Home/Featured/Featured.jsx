@@ -16,11 +16,11 @@ export const Featured = () => {
   // Display the formatted date
   // console.log(formattedDate); // Output: Today's date (e.g., "September 15, 2024")
   return (
-    <div className="featured-item text-white pt-8 my-20">
+    <div className="featured-item bg-fixed text-white pt-8 my-20">
       <SectionTitle heading="featured item" subHeading="check it out" />
-      <div className="md:flex justify-center items-center pb-20 pt-12 px-36">
+      <div className="md:flex justify-center items-center pb-20 pt-12 px-36 bg-slate-500 bg-opacity-40">
         <div>
-          <img src={featuredImg} alt="featuredImg" className="" />
+          <img src={featuredImg} alt="featuredImg" className="rounded-lg" />
         </div>
         <div className="md:ml-10">
           {/* <p>20 October, 2024</p> */}
@@ -32,7 +32,9 @@ export const Featured = () => {
             tenetur molestias autem, porro eos incidunt. Dolorem reiciendis
             repellat ut consequuntur.
           </h3>
-          <button className="btn btn-outline">Order Now</button>
+          <button className="btn btn-outline border-0 border-b-4 bg-slate-500 text-white mt-4">
+            Order Now
+          </button>
         </div>
       </div>
     </div>
